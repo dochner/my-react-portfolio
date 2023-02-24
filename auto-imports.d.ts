@@ -17,6 +17,7 @@ declare global {
   const startTransition: typeof import('react')['startTransition']
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
+  const useDarkMode: typeof import('@reactuses/core')['useDarkMode']
   const useDebugValue: typeof import('react')['useDebugValue']
   const useDeferredValue: typeof import('react')['useDeferredValue']
   const useEffect: typeof import('react')['useEffect']
@@ -41,5 +42,6 @@ declare global {
   const useSearchParams: typeof import('react-router-dom')['useSearchParams']
   const useState: typeof import('react')['useState']
   const useSyncExternalStore: typeof import('react')['useSyncExternalStore']
+  const useToggle: typeof import('@reactuses/core')['useToggle']
   const useTransition: typeof import('react')['useTransition']
 }

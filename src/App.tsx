@@ -12,16 +12,16 @@ const LazyLoad = () => {
     return () => {
       NProgress.done();
     };
-  });
+  }, []);
 
   return <></>;
 };
 
 function App() {
   return (
-    <div className="root">
+    <>
       <Suspense fallback={<LazyLoad />}>{useRoutes(routes)}</Suspense>
-    </div>
+    </>
   );
 }
 
