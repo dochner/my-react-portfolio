@@ -1,5 +1,5 @@
 <p align='center'>
-<a href="https://portfolio.douglasochner.me/">Live Demo</a>
+<a href="https://douglasochner.netlify.app//">Live Demo</a>
 </p>
 
 `MyReactPortfolio` is being created with the following purposes:
@@ -52,12 +52,11 @@
 - [React Router](https://github.com/remix-run/react-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [`unplugin-react-components`](https://github.com/snowingfox/unplugin-react-components) - components auto import
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Hooks, Context and others without importing
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
 
 ### Coding Style
 
-- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
 - [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
 
 ### Dev tools
