@@ -45,7 +45,7 @@ export default defineConfig({
     presetAttributify(),
     presetForms(),
     presetIcons({
-      scale: 1.5,
+      scale: 1.2,
       warn: true,
     }),
     presetTypography(),
