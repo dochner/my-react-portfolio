@@ -27,7 +27,7 @@ const tabs = [
 
 const Header = () => {
   return (
-    <header className="h-82px row bg-black/4 backdrop-blur-sm dark:bg-white/4 border-black/12 dark:border-white/12 shadow-sm border-b-px">
+    <header className="h-82px row bg-black/4 backdrop-blur-sm dark:bg-white/4 border-black/12 dark:border-white/12 shadow-sm border-b-px sticky top-0">
       <div
         className="row items-center w-full px-4"
         un-w="col-12 md:col-10"
