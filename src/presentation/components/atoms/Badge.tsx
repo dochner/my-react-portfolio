@@ -16,7 +16,7 @@ interface IBadgeProps extends React.PropsWithChildren<{}> {
 }
 
 const defaultBadgeClasses =
-  "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium relative";
+  "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium relative w-max";
 
 const classNames = (...classes: string[]) => {
   return classes.filter(Boolean).join(" ");

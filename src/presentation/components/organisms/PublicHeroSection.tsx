@@ -1,9 +1,8 @@
-import { ChevronRightIcon, StarIcon } from "@heroicons/react/24/solid";
 type Props = {};
 
 const PublicHeroSection = (props: Props) => {
   return (
-    <div className="pb-8 sm:pb-12 lg:pb-12">
+    <section className="pb-8 sm:pb-12 lg:pb-12">
       <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
         <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
           <div>
@@ -27,7 +26,7 @@ const PublicHeroSection = (props: Props) => {
             </div>
             <Link
               to="/contact-me"
-              className="text-2xl fw-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary"
+              className="text-2xl fw-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary underline-1 underline-primary-500 underline-dashed underline"
             >
               Let's talk!
             </Link>
@@ -72,16 +71,12 @@ const PublicHeroSection = (props: Props) => {
               </svg>
             </div>
             <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-              <img
-                className="w-full rounded-md dark:drop-shadow-color-white/12 drop-shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
-                src="/avatar-full-no-bg.png"
-                alt=""
-              />
+              {/* Add my avatar photo later */}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
