@@ -31,9 +31,9 @@ export const Tab = ({
           className={({ isActive }) =>
             classNames(
               isActive
-                ? "border-primary-500 text-primary-400"
+                ? "border-primary-500 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500"
                 : "border-transparent text-gray-600 dark:text-gray-200 hover:text-primary-500 hover:border-primary-400",
-              "cursor-pointer group inline-flex items-center px-1 pt-1 border-b-2 font-medium font-display h-full"
+              "cursor-pointer group inline-flex items-center px-1 pt-1 border-b-2 font-medium h-full"
             )
           }
         >
