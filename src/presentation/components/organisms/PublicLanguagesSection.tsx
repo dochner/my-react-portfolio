@@ -37,14 +37,16 @@ const features = [
 
 const PublicLanguagesSection = (props: Props) => {
   return (
-    <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <section
+      id="my-skills"
+      className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8"
+    >
       <div>
-        <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">
-          Features
+        <h2 className="mt-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary">
+          <a href="#my-skills">My Skillset</a>
         </h2>
-        <p className="mt-2 text-3xl font-extrabold">My skillset</p>
       </div>
-      <div className="mt-12 lg:mt-0 lg:col-span-2">
+      <div className="mt-12 lg:mt-20 lg:col-span-2">
         <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           {features.map((feature) => (
             <div key={feature.name} className="relative">

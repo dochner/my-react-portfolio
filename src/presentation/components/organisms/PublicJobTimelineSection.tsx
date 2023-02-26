@@ -37,14 +37,22 @@ function classNames(...classes: string[]) {
 
 export const PublicJobTimelineSection = () => {
   return (
-    <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <section
+      id="experiences"
+      className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8"
+    >
       <div>
-        <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">
-          TIMELINE
+        <h2 className="mt-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary">
+          <a href="#experiences">My Experience</a>
         </h2>
-        <p className="mt-2 text-3xl font-extrabold">My Experience</p>
+
+        <p className="mt-3 text-lg leading-6 text-gray-500 dark:text-gray-300">
+          With my experience in web development and support analysis, I am
+          confident in my ability to tackle the challenges that comes my way,
+          and excited to grow up with them.
+        </p>
       </div>
-      <div className="mt-12 lg:mt-0 lg:col-span-2">
+      <div className="mt-12 lg:mt-20 lg:col-span-2">
         <nav aria-label="Progress">
           <ol role="list" className="overflow-hidden">
             {steps.map((step, stepIdx) => (

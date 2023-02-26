@@ -4,6 +4,7 @@ import PublicLayout from "../components/template/PublicLayout";
 import PublicHeroSection from "../components/organisms/PublicHeroSection";
 import PublicLanguagesSection from "../components/organisms/PublicLanguagesSection";
 import PublicJobTimelineSection from "../components/organisms/PublicJobTimelineSection";
+import PublicCtaContactMe from "../components/organisms/PublicCtaContactMe";
 
 export const Index = () => {
   return (
@@ -12,6 +13,7 @@ export const Index = () => {
         <PublicHeroSection />
         <PublicLanguagesSection />
         <PublicJobTimelineSection />
+        <PublicCtaContactMe />
       </article>
     </PublicLayout>
   );

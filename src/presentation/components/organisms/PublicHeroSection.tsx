@@ -2,7 +2,7 @@ type Props = {};
 
 const PublicHeroSection = (props: Props) => {
   return (
-    <section className="pb-8 sm:pb-12 lg:pb-12">
+    <section className="pb-8 sm:pb-12">
       <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
         <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
           <div>
@@ -11,10 +11,11 @@ const PublicHeroSection = (props: Props) => {
                 Douglas Gabriel Ochner
               </h1>
               <p className="mt-6 text-xl dark:text-gray-200">
-                I'm a frontend developer who loves to create beautiful websites
-                and applications. With over 3 years of experience in Vue.js,
-                JavaScript, HTML, and CSS I have a passion for bringing design
-                ideas to life.
+                I am a skilled frontend developer with over 10 years of
+                experience in the field of technology. During the past three
+                years, I have focused on web development, specifically with
+                Vue.js, and have built a solid reputation for creating dynamic
+                and user-friendly interfaces for various applications.
               </p>
             </div>
             <p className="text-xl max-w-xl mt-md"></p>
