@@ -2,7 +2,7 @@ type Props = {};
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import Btn from "../atoms/Btn";
 import InputText from "../atoms/InputText";
-import TextArea from "../atoms/Textarea";
+import TextArea from "../atoms/TextArea";
 
 const PublicCtaContactMe = (props: Props) => {
   return (
