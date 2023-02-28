@@ -156,6 +156,7 @@ const Header = () => {
                   tabs.map((tab) => (
                     <Link
                       to={tab.to}
+                      key={tab.name}
                       className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-dark-900 dark:text-white hover:bg-gray-50 hover:text-dark-900"
                     >
                       {tab.label}

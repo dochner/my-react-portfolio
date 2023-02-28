@@ -1,12 +1,12 @@
 import "@/presentation/styles/home.css";
-import PublicLayout from "../components/template/PublicLayout";
+import PublicLayout from "@/presentation/components/template/PublicLayout";
 
-import PublicHeroSection from "../components/organisms/PublicHeroSection";
-import PublicLanguagesSection from "../components/organisms/PublicLanguagesSection";
-import PublicJobTimelineSection from "../components/organisms/PublicJobTimelineSection";
-import PublicCtaContactMe from "../components/organisms/PublicCtaContactMe";
+import PublicHeroSection from "@/presentation/components/organisms/PublicHeroSection";
+import PublicLanguagesSection from "@/presentation/components/organisms/PublicLanguagesSection";
+import PublicJobTimelineSection from "@/presentation/components/organisms/PublicJobTimelineSection";
+import PublicCtaContactMe from "@/presentation/components/organisms/PublicCtaContactMe";
 
-export const Index = () => {
+export const HomePage = () => {
   return (
     <PublicLayout>
       <article>
@@ -19,4 +19,4 @@ export const Index = () => {
   );
 };
 
-export default Index;
+export default HomePage;

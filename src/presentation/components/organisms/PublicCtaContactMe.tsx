@@ -1,5 +1,5 @@
 type Props = {};
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import Btn from "../atoms/Btn";
 import InputText from "../atoms/InputText";
 import TextArea from "../atoms/TextArea";
@@ -41,8 +41,8 @@ const PublicCtaContactMe = (props: Props) => {
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
-                  <EnvelopeIcon
-                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                  <i
+                    className="flex-shrink-0 h-6 w-6 text-gray-400 i-carbon-at"
                     aria-hidden="true"
                   />
                   <a

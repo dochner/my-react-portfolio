@@ -1,12 +1,11 @@
 import "@/presentation/styles/home.css";
-import PublicLayout from "../components/template/PublicLayout";
+import PublicLayout from "@/presentation/components/template/PublicLayout";
 
-import { ChevronRightIcon, StarIcon } from "@heroicons/react/24/solid";
-import Btn from "../components/atoms/Btn";
-import Badge from "../components/atoms/Badge";
-import InputText from "../components/atoms/InputText";
+import Btn from "@/presentation/components/atoms/Btn";
+import Badge from "@/presentation/components/atoms/Badge";
+import InputText from "@/presentation/components/atoms/InputText";
 
-export const Index = () => {
+export const ComponentsPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,13 +19,13 @@ export const Index = () => {
             <div className="row space-x-sm">
               <h1 className="w-full section-title pb-md">Button</h1>
 
-              <Btn label="Get in Touch" variant="secondary" size="xs"></Btn>
-              <Btn label="Get in Touch" variant="primary"></Btn>
-              <Btn label="Get in Touch" variant="white"></Btn>
+              <Btn label="Get in Touch" variant="secondary" size="xs" />
+              <Btn label="Get in Touch" variant="primary" />
+              <Btn label="Get in Touch" variant="white" />
               <Btn label="Get in Touch" round>
                 Oipaosdkasdksa
               </Btn>
-              <Btn icon="i-carbon-person" fab></Btn>
+              <Btn icon="i-carbon-person" fab />
             </div>
 
             <div className="row space-x-sm">
@@ -51,8 +50,7 @@ export const Index = () => {
                   name.length > 1 && name.length < 3 ? "Name is too short" : ""
                 }
                 onChange={(e) => setName(e.target.value)}
-              ></InputText>
-
+              />
               <InputText
                 name="email"
                 label="Type your email"
@@ -66,7 +64,7 @@ export const Index = () => {
                     : ""
                 }
                 onChange={(e) => setEmail(e.target.value)}
-              ></InputText>
+              />
             </div>
           </div>
         </section>
@@ -75,4 +73,4 @@ export const Index = () => {
   );
 };
 
-export default Index;
+export default ComponentsPage;

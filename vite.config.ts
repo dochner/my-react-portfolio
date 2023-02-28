@@ -22,7 +22,6 @@ export default defineConfig({
       exclude: ["**/components/**/*"],
       extensions: ["tsx", "mdx"],
       extendRoute(route, parent) {
-        console.log('route: ', route, '\nparent: ', parent)
         if (route.path === "/") {
           // Index is unauthenticated.
           return route;
@@ -48,7 +47,8 @@ export default defineConfig({
         {
           "@reactuses/core": [
             "useToggle",
-            'useDarkMode',
+            "useDarkMode",
+            "useDebounceFn",
           ],
         },
       ],
