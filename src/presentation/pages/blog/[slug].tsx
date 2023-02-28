@@ -115,7 +115,7 @@ const BlogPost = (props: IBlogPostProps) => {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200 dark:text-dark-50"
+                    className="text-primary-100 dark:text-primary-700/50"
                     fill="currentColor"
                   />
                 </pattern>
@@ -147,7 +147,7 @@ const BlogPost = (props: IBlogPostProps) => {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200 dark:text-dark-50"
+                    className="text-primary-100 dark:text-primary-700/50"
                     fill="currentColor"
                   />
                 </pattern>
@@ -179,7 +179,7 @@ const BlogPost = (props: IBlogPostProps) => {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200 dark:text-dark-50"
+                    className="text-primary-100 dark:text-primary-700/50"
                     fill="currentColor"
                   />
                 </pattern>
@@ -193,7 +193,7 @@ const BlogPost = (props: IBlogPostProps) => {
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto prose prose-primary">
+          <div className="text-lg max-w-prose mx-auto prose prose-primary dark:prose-invert">
             <h1>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
                 {tempPost?.title}
@@ -202,7 +202,7 @@ const BlogPost = (props: IBlogPostProps) => {
             <p className="mt-8 text-xl leading-8">{tempPost?.description}</p>
           </div>
           <div
-            className="mt-6 prose prose-primary text-gray-500 dark:text-light mx-auto"
+            className="mt-6 prose prose-primary dark:prose-invert text-gray-500 dark:text-light mx-auto"
             dangerouslySetInnerHTML={tempPost?.content}
           ></div>
         </div>

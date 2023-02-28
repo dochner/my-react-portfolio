@@ -12,6 +12,7 @@ import { presetForms } from "@julr/unocss-preset-forms";
 
 export default defineConfig({
   shortcuts: [
+    { "link": "text-primary-500 hover:text-primary-600 underline underline-px underline-dashed underline-offset-2 truncate" },
     { row: "flex flex-wrap flex-row w-auto min-w-0 max-w-full" },
     { column: "flex flex-wrap flex-col h-auto min-h-0 max-h-full" },
     { "no-wrap": "flex-nowrap" },

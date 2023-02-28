@@ -83,9 +83,9 @@ const BlogPage = ({ children }: IBlogPageProps) => {
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight font-extrabold lg:text-5xl !leading-loose text-transparent bg-clip-text bg-gradient-to-b from-primary-500 to-secondary">
-              My Blog Posts
-            </h2>
+            <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-5xl !leading-loose text-transparent bg-clip-text bg-gradient-to-b from-primary-500 to-secondary">
+              My Blog posts
+            </h1>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="mt-6 w-full mx-auto">

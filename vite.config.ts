@@ -48,10 +48,10 @@ export default defineConfig({
           "@reactuses/core": [
             "useToggle",
             "useDarkMode",
-            "useDebounceFn",
           ],
         },
       ],
+      dirs: ["src/presentation/hooks"],
 
       dts: true,
     }),

@@ -58,7 +58,7 @@ html.dark {
   width: 100%;
   height: 2px;
 }
-
+/*
 html.dark .prose-primary {
   --un-prose-body: #8081f0;
   --un-prose-headings: #786afa;
@@ -80,4 +80,4 @@ html.dark .prose-primary {
   --un-prose-invert-bg-soft: #282960;
   --un-prose-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-}
+} */

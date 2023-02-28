@@ -62,7 +62,7 @@ const ProjectsPage = () => {
     <PublicLayout>
       <article>
         <section className="max-w-7xl mx-auto py-24 sm:py-32 px-4 sm:px-6 lg:px-8 column justify-center text-center">
-          <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-primary-500 to-secondary">
+          <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-5xl !leading-loose text-transparent bg-clip-text bg-gradient-to-b from-primary-500 to-secondary">
             My Projects
           </h1>
           <p className="mt-2 text-lg max-w-xl mx-auto leading-8 text-gray-600 dark:text-light-300">

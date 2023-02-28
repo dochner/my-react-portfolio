@@ -18,7 +18,7 @@ declare global {
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
   const useDarkMode: typeof import('@reactuses/core')['useDarkMode']
-  const useDebounceFn: typeof import('@reactuses/core')['useDebounceFn']
+  const useDebounceFn: typeof import('./src/presentation/hooks/useDebounceFn')['default']
   const useDebugValue: typeof import('react')['useDebugValue']
   const useDeferredValue: typeof import('react')['useDeferredValue']
   const useEffect: typeof import('react')['useEffect']
