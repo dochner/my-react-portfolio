@@ -84,8 +84,8 @@ const ProjectsPage = () => {
                 <div className="flex items-center gap-x-4 text-xs px-6 py-4">
                   {project?.category &&
                     Array.isArray(project.category) &&
-                    project?.category.map((category) => (
-                      <Link to={category.href}>
+                    project?.category.map((category, idx) => (
+                      <Link to={category.href} key={idx}>
                         <Badge>{category.title}</Badge>
                       </Link>
                     ))}

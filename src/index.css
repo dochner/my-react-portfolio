@@ -59,3 +59,25 @@ html.dark {
   height: 2px;
 }
 
+html.dark .prose-primary {
+  --un-prose-body: #8081f0;
+  --un-prose-headings: #786afa;
+  --un-prose-links: #141430;
+  --un-prose-lists: #8285f4;
+  --un-prose-hr: #c1c2f9;
+  --un-prose-captions: #6366f1;
+  --un-prose-code: #141430;
+  --un-prose-borders: #898bff;
+  --un-prose-bg-soft: #e0e0fc;
+  --un-prose-invert-body: #c1c2f9;
+  --un-prose-invert-headings: #e0e0fc;
+  --un-prose-invert-links: #e0e0fc;
+  --un-prose-invert-lists: #6366f1;
+  --un-prose-invert-hr: #3b3d91;
+  --un-prose-invert-captions: #8285f4;
+  --un-prose-invert-code: #e0e0fc;
+  --un-prose-invert-borders: #3b3d91;
+  --un-prose-invert-bg-soft: #282960;
+  --un-prose-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}

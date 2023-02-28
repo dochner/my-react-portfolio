@@ -24,7 +24,31 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
     }),
-    presetTypography(),
+    presetTypography({
+      cssExtend: {
+        "h1,h2,h3,h4,h5,h6": {
+          "font-weight": "600",
+        },
+        "h1,h2,h3": {
+          "letter-spacing": "-0.025em",
+        },
+        "h1,h2": {
+          "line-height": "1.1",
+        },
+        "h3,h4,h5,h6": {
+          "line-height": "1.2",
+        },
+        "h1": {
+          "font-size": "2.25rem",
+        },
+        "h2": {
+          "font-size": "1.875rem",
+        },
+        "h3": {
+          "font-size": "1.5rem",
+        },
+      }
+    }),
     presetWebFonts({
       provider: "google",
       fonts: {

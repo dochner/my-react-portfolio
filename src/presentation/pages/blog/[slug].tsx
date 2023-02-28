@@ -193,18 +193,16 @@ const BlogPost = (props: IBlogPostProps) => {
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto">
+          <div className="text-lg max-w-prose mx-auto prose prose-primary">
             <h1>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 dark:text-light-200 sm:text-4xl">
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
                 {tempPost?.title}
               </span>
             </h1>
-            <p className="mt-8 text-xl text-gray-500 dark:text-light-800 leading-8">
-              {tempPost?.description}
-            </p>
+            <p className="mt-8 text-xl leading-8">{tempPost?.description}</p>
           </div>
           <div
-            className="mt-6 prose prose-blue text-gray-500 dark:text-light mx-auto"
+            className="mt-6 prose prose-primary text-gray-500 dark:text-light mx-auto"
             dangerouslySetInnerHTML={tempPost?.content}
           ></div>
         </div>
