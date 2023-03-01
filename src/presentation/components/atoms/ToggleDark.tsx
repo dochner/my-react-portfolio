@@ -1,43 +1,105 @@
-import { Switch } from "@headlessui/react";
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import {
+  SunIcon,
+  MoonIcon,
+  ComputerDesktopIcon,
+} from "@heroicons/react/20/solid";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export const ToggleDark = () => {
-  const [theme, setTheme] = useDarkMode<"light" | "dark">();
+  const [theme, setTheme] = useDarkMode();
 
-  const toggleDark = () => {
-    if (theme === "dark") {
-      setTheme("light");
+  useEffect(() => {
+    const prefferedTheme = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    const setting = localStorage.getItem("reactuses-color-scheme") || "auto";
+
+    if (setting === "dark" || (prefferedTheme && setting !== "light")) {
+      document.documentElement.classList.toggle("dark", true);
     } else {
-      setTheme("dark");
+      document.documentElement.classList.toggle("dark", false);
     }
-  };
+  }, [theme]);
 
   return (
-    <Switch
-      checked={theme === "dark"}
-      onChange={toggleDark}
-      className={classNames(
-        theme === "dark" ? "bg-dark-100" : "bg-gray-200",
-        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out outline-none ring-1 ring-transparent hover:ring-primary-500 focus:ring-primary-500"
-      )}
-    >
-      <span className="sr-only">Use setting</span>
-      <span
-        className={classNames(
-          theme === "dark" ? "translate-x-5" : "translate-x-0",
-          "pointer-events-none relative inline-flex items-center justify-center text-xs h-5 w-5 rounded-full bg-white dark:bg-dark-500 shadow transform ring-0 transition ease-in-out duration-200"
-        )}
-      >
-        <i
-          className={classNames(
-            theme === "dark" ? "i-bx-moon" : "i-bx-sun text-gray-500"
+    <Menu as="div" className="relative flex text-left">
+      <>
+        <Menu.Button className="inline-flex pa-xs w-full justify-center rounded-md border border-gray-300 dark:border-dark-50 dark:bg-dark-200 ">
+          <span className="sr-only">Open theme options</span>
+          {theme === "light" ? (
+            <SunIcon className="h-5 w-5" aria-hidden="true" />
+          ) : theme === "dark" ? (
+            <MoonIcon className="h-5 w-5" aria-hidden="true" />
+          ) : (
+            <ComputerDesktopIcon className="h-5 w-5 " aria-hidden="true" />
           )}
-        ></i>
-      </span>
-    </Switch>
+        </Menu.Button>
+      </>
+
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
+        <Menu.Items className="absolute right-0 z-10 mt-8 w-40 pa-sm origin-top-right rounded-md bg-white dark:bg-dark-300 ring-1 border-1 border-gray-300 dark:border-dark-100 ring-black ring-opacity-5 focus:outline-none space-y-xs">
+          <Menu.Item>
+            <div
+              onClick={() => setTheme("light")}
+              className={classNames(
+                "pa-sm row space-x-md items-center rounded-lg hover:bg-gray-200 dark:hover:bg-dark-100 cursor-pointer",
+                theme === "light" ? "bg-gray-200 dark:bg-dark-50" : ""
+              )}
+            >
+              <SunIcon
+                className="h-6 w-6  rounded-lg border border-gray-300 dark:border-dark-100 pa-xs bg-white dark:bg-dark-300"
+                aria-hidden="true"
+              />
+              <div>Light</div>
+            </div>
+          </Menu.Item>
+          <Menu.Item>
+            <div
+              onClick={() => setTheme("dark")}
+              className={classNames(
+                "pa-sm row space-x-md items-center rounded-lg hover:bg-gray-200 dark:hover:bg-dark-100 cursor-pointer",
+                theme === "dark" ? "bg-gray-200 dark:bg-dark-50" : ""
+              )}
+            >
+              <MoonIcon
+                className="h-6 w-6  rounded-lg border border-gray-300 dark:border-dark-100 pa-xs bg-white dark:bg-dark-300"
+                aria-hidden="true"
+              />
+              <div>Dark</div>
+            </div>
+          </Menu.Item>
+          <Menu.Item>
+            <div
+              onClick={() => setTheme("auto")}
+              className={classNames(
+                "pa-sm row space-x-md items-center rounded-lg hover:bg-gray-200 dark:hover:bg-dark-100 cursor-pointer",
+                theme === "auto" ? "bg-gray-200 dark:bg-dark-50" : ""
+              )}
+            >
+              <ComputerDesktopIcon
+                className="h-6 w-6  rounded-lg border border-gray-300 dark:border-dark-100 pa-xs bg-white dark:bg-dark-300"
+                aria-hidden="true"
+              />
+              <div>System</div>
+            </div>
+          </Menu.Item>
+        </Menu.Items>
+      </Transition>
+    </Menu>
   );
 };
 
